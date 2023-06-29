@@ -6,7 +6,7 @@ class Solution:
          #   if s.count(i) != t.count(i):
           #      return False
         
-        if len(s) >= len(t):
+        '''if len(s) >= len(t):
             for i in s:
                 if s.count(i) != t.count(i):
                     return False
@@ -15,6 +15,13 @@ class Solution:
             for i in t:
                 if s.count(i) != t.count(i):
                     return False
-        return True
-            
+        return True'''
+        
+        s = [i for i in s]
+        t = [i for i in t]
+        a = s.sort()
+        b = t.sort()
+        if s == t:
+            return True
+        return False
         

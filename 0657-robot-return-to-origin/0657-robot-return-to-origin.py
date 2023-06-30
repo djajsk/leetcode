@@ -16,8 +16,8 @@ class Solution:
 
         if x == 0 and y == 0:
             return True
-        else:
-            return False
+        
+        return False
             
 
         
